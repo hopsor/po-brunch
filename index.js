@@ -9,7 +9,7 @@ class PoBrunchPlugin {
   }
 
   compile(file){
-    const parsedFile = po2json.parseFileSync(file);
+    const parsedFile = po2json.parseFileSync(file.path);
     return Promise.resolve(parsedFile);
   }
 }
