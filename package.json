@@ -20,7 +20,7 @@
     "url": "https://github.com/hopsor/po-brunch/issues"
   },
   "homepage": "https://github.com/hopsor/po-brunch#readme",
-  "devDependencies": {
+  "dependencies": {
     "po2json": "^0.4.5"
   }
 }
