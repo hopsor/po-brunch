@@ -1,6 +1,6 @@
 'use strict';
 
-import po2json from 'po2json';
+const po2json = require('po2json');
 
 class PoBrunchPlugin {
   constructor(config){
