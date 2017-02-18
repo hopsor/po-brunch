@@ -1,0 +1,26 @@
+{
+  "name": "po-brunch",
+  "version": "0.1.0",
+  "description": "Brunch plugin to convert Portable Object files into JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "po",
+    "brunch.io"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hopsor/po-brunch"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hopsor/po-brunch/issues"
+  },
+  "homepage": "https://github.com/hopsor/po-brunch#readme",
+  "devDependencies": {
+    "po2json": "^0.4.5"
+  }
+}
