@@ -9,12 +9,15 @@ class PoBrunchPlugin {
   }
 
   compile(file){
-    const parsedFile = po2json.parseFileSync(file.path);
-    return Promise.resolve(parsedFile);
+    return new Promise((resolve, reject) => {
+      const parsedFile = po2json.parseFileSync(file.path);
+      resolve({data: "module.exports = " + JSON.stringify(parsedFile) + ";"});
+    });
   }
 }
 
 PoBrunchPlugin.prototype.brunchPlugin = true;
+PoBrunchPlugin.prototype.type = 'javascript';
 PoBrunchPlugin.prototype.extension = 'po';
 
 module.exports = PoBrunchPlugin;
